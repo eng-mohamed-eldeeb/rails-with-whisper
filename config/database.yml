@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: rails_with_whisper_production
-  username: rails_with_whisper
-  password: <%= ENV["RAILS_WITH_WHISPER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
